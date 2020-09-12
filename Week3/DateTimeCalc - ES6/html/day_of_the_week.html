@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<title>Week Number Calculation</title>
+	<script>
+		
+
+		const printWeekNumber = () => {
+			let dateInput = document.getElementById("dateInput").value;
+			const date = new Date(dateInput);
+			const result = date.getDay();
+			const weekday = new Array(7);
+			weekday[0] = "Sunday";
+			weekday[1] = "Monday";
+			weekday[2] = "Tuesday";
+			weekday[3] = "Wednesday";
+			weekday[4] = "Thursday";
+			weekday[5] = "Friday";
+			weekday[6] = "Saturday";
+			document.getElementById("result").innerHTML =
+			"The Day " + weekday[result];
+		} 
+	</script>
+</head>
+
+<body>
+
+	<h1 style= "color: lightslategray;"align="center" >Get day for a given week</h1>
+
+	<div class="container"><br>
+		<div class="col-lg-8 m-auto">
+			<form id="myform" action="#" method="POST">
+				<div class="form=group">
+					<label for="date1">Date 1: </label>
+					<input type="date" id="dateInput" class="form-control" placeholder="In DD/MM/YYYY"><br><br>
+				</div>
+				
+				<h3 style="color:lightslategrey" id="result" align="center"></h3>
+				
+				
+				<input type="button" class= "btn btn-primary" align="center" value="Get Week Number" onclick="printWeekNumber()" 
+				style="background-color:rgb(17, 98, 219);margin-left:auto;margin-right:auto;display:block;margin-top:22%;margin-bottom:0%"/>
+				
+			</form></div></div>
+			
+
+		</body>
+
+		</html>

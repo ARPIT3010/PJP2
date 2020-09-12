@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+	integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css" type="text/css"/>
+	<script src="..\Scripts\addSub.js"></script>
+	<title>Add Two Dates</title>
+</head>
+<body >
+	<h1 style="text-align:center">Add Two Dates</h1>
+	<div class="container"><br>
+		<div class="col-lg-8 m-auto">
+			<form id="myform" action="#" method="POST">
+				<div class="form-group">
+					<label for="date1">Date 1: </label>
+					<input type="date" id="date1" class="form-control" placeholder="In DD/MM/YYYY"><br><br>
+				</div>
+				<div class="form-group">
+					<label for="date2">Date 2: </label>
+					<input type="date" id="date2" class="form-control" placeholder="In DD/MM/YYYY"><br>
+					<br>
+				</div>
+				<div class="container second">
+					<div class="row">
+						<div class="col-md">
+							<div class="contain" id="year">
+								<h1 class="heading1" id="showYears">0</h1>
+								<h3 class="heading2">Years</h3>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="contain" id="month">
+								<h1 class="heading1" id="showMonths">0</h1>
+								<h3 class="heading2">Months</h3>
+							</div>
+						</div>
+						<div class="col-md">
+							<div class="contain" id="days">
+								<h1 class="heading1" id="showDays">0</h1>
+								<h3 class="heading2">Days</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br><br><br><br><br>
+				<input type="button" class= "btn btn-primary" id="add" value="Add" onclick = "addition()" />
+				<input type="button" class= "btn btn-primary" id="minus" value="Substract" onclick="subtract()" />
+				
+			</form>
+		</div>
+	</div>
+
+</body>
+</html>
